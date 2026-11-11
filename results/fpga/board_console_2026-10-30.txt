@@ -1,0 +1,26 @@
+AC701 matrix-engine-only board run, 2026-10-30 (bitstream D:\ac701_vivado_v2\ac701_me_board\bit\ac701_me_board.bit,
+125 MHz, me_top with ME_EAST_REG + ME_TILE_REG). Vivado Hardware Manager Tcl console, sim/hw_ac701_me_board.tcl, bd_all:
+
+case 0: layer 0 W_Q, 5 rows  PASS  code 00  GEMM 5309 cycles = 42.47 us  39.1 GMAC/s  (61.0% of the 512-MAC peak)
+        output beats compared 90, differ 0; run 14776 cycles; saturations 0; array beats 5184
+case 1: layer 0 W_Q, 8 rows  PASS  code 00  GEMM 5309 cycles = 42.47 us  62.5 GMAC/s  (97.6% of the 512-MAC peak)
+        output beats compared 144, differ 0; run 20383 cycles; saturations 0; array beats 5184
+case 2: layer 0 W_Q, 16 rows  PASS  code 00  GEMM 10493 cycles = 83.94 us  63.2 GMAC/s  (98.8% of the 512-MAC peak)
+        output beats compared 288, differ 0; run 40519 cycles; saturations 0; array beats 10368
+case 3: layer 0 W_Q, 24 rows  PASS  code 00  GEMM 15677 cycles = 125.42 us  63.5 GMAC/s  (99.2% of the 512-MAC peak)
+        output beats compared 432, differ 0; run 60655 cycles; saturations 0; array beats 15552
+case 4: layer 29 W_Q, 5 rows  PASS  code 00  GEMM 5309 cycles = 42.47 us  39.1 GMAC/s  (61.0% of the 512-MAC peak)
+        output beats compared 90, differ 0; run 14776 cycles; saturations 0; array beats 5184
+case 5: layer 29 W_Q, 8 rows  PASS  code 00  GEMM 5309 cycles = 42.47 us  62.5 GMAC/s  (97.6% of the 512-MAC peak)
+        output beats compared 144, differ 0; run 20383 cycles; saturations 0; array beats 5184
+case 6: layer 29 W_Q, 16 rows  PASS  code 00  GEMM 10493 cycles = 83.94 us  63.2 GMAC/s  (98.8% of the 512-MAC peak)
+        output beats compared 288, differ 0; run 40519 cycles; saturations 0; array beats 10368
+case 7: layer 29 W_Q, 24 rows  PASS  code 00  GEMM 15677 cycles = 125.42 us  63.5 GMAC/s  (99.2% of the 512-MAC peak)
+        output beats compared 432, differ 0; run 60655 cycles; saturations 0; array beats 15552
+
+Repeat mode (DIP 3 on, button SW6, case 0, ~25 s): runs 212387, passes 212387, fails 0 (VIO vio_i1 / i2 / i3).
+
+bd_gemm_only 3 1000:
+case 3: layer 0 W_Q, 24 rows  PASS  code 00  GEMM 15677 cycles = 125.42 us  63.5 GMAC/s  (99.2% of the 512-MAC peak)
+        output beats compared 432, differ 0; run 64453137 cycles; saturations 0; array beats 63825408
+        GEMM-only: 4104 GEMMs in 64408162 cycles = 515.265 ms, sustained 63.4 GMAC/s, GEMMs 99.9% of the loop

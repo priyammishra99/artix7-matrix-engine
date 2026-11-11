@@ -1,0 +1,13 @@
+# Vivado / xsim output
+.Xil/
+xsim.dir/
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+webtalk*
+vivado*.backup.*
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,13 @@
+0c02220890000000 00 valid: W_Q from staging (accepted)
+0c02220890000001 21 reserved bit 0 set
+0c02220890000040 21 reserved bit 6 set
+0c02220893c00000 21 layer 30 >= n_layers
+0c02220897e00000 21 layer 63
+0c02220890100000 21 ROWSET_ENC (reserved)
+0c02220090000000 23 tag 0: attn_norm, a VECTOR entry
+0c02222890000000 23 tag 5: ffn_norm, a VECTOR entry
+0c02228090000000 23 tag 16: final_norm, a VECTOR entry
+0c02420890000000 21 A = WIN with no window filled
+0c02520890000000 21 A = KVO: not a GEMM source
+0c02240890000000 21 D = WIN: not a GEMM destination
+0c02200890000000 21 D = NONE without TOPK

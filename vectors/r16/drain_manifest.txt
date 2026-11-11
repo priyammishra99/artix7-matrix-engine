@@ -1,0 +1,7 @@
+edge_i16 6 64 1 2 0 0 0 153
+edge_i32 6 64 4 8 2 0 0 119
+edge_i16_neg 6 64 9 5 0 0 0 261
+edge_acc16 6 64 1 2 0 1 0 184
+edge_acc32 6 64 3 0 2 1 0 134
+edge_scale_inf 6 64 1 2 0 0 42 0
+edge_scale_nan 6 64 1 2 0 0 42 0

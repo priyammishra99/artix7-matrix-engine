@@ -1,0 +1,9 @@
+sel 0: l0_q   5 rows  N 576 K 576  weights 5202 beats  window 46 beats  reference 90 beats  dump 480 beats  array beats 5184  saturations 0
+sel 1: l0_q   8 rows  N 576 K 576  weights 5202 beats  window 73 beats  reference 144 beats  dump 768 beats  array beats 5184  saturations 0
+sel 2: l0_q  16 rows  N 576 K 576  weights 5202 beats  window 145 beats  reference 288 beats  dump 1536 beats  array beats 10368  saturations 0
+sel 3: l0_q  24 rows  N 576 K 576  weights 5202 beats  window 217 beats  reference 432 beats  dump 2304 beats  array beats 15552  saturations 0
+sel 4: l29_q  5 rows  N 576 K 576  weights 5202 beats  window 46 beats  reference 90 beats  dump 480 beats  array beats 5184  saturations 0
+sel 5: l29_q  8 rows  N 576 K 576  weights 5202 beats  window 73 beats  reference 144 beats  dump 768 beats  array beats 5184  saturations 0
+sel 6: l29_q 16 rows  N 576 K 576  weights 5202 beats  window 145 beats  reference 288 beats  dump 1536 beats  array beats 10368  saturations 0
+sel 7: l29_q 24 rows  N 576 K 576  weights 5202 beats  window 217 beats  reference 432 beats  dump 2304 beats  array beats 15552  saturations 0
+ROM depths: weights 10404, window 962, reference 1908, script 224 (512/512/512/64 bits)

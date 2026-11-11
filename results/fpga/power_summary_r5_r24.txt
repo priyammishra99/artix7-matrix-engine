@@ -1,0 +1,30 @@
+me_top (matrix engine, both switches on, 125 MHz) - Vivado 2024.1 post-implementation power with simulation activity (RTL SAIF)
+Routed design: D:\ac701_vivado_v2\me_top\me_top.runs\impl_1\me_top_routed.dcp (26 Oct 2026, unchanged). Activity: the GEMM only
+(from the command path's accept to idle), tb_me_top_s1 on the real me_array. Confidence: High in both.
+
+                         5 rows (26 Oct)               24 rows (31 Oct)
+Case                     layer-0 W_Q, RATE 1 (gaps)    layer-0 W_Q, RATE 0 (full speed, as on the board), two chats
+GEMM window              6,779 cycles = 54.232 us      15,674 cycles = 125.392 us (board: 15,677)
+Nets matched             66,866 of 93,605              67,226 of 93,605
+Total on-chip power      1.682 W                       2.405 W
+  dynamic / static       1.551 / 0.131 W               2.272 / 0.133 W
+  VCCINT                 1.579 W                       2.301 W
+  by type: clocks        0.362                         0.363
+           signals       0.625                         0.991
+           DSPs          0.380                         0.708
+           block RAM     0.109                         0.115
+           slice logic   0.075                         0.095
+  by block: u_array      1.283                         2.011
+            u_ring       0.111                         0.108
+            u_drain      0.096                         0.083
+            u_store      0.048                         0.059
+            u_cmd        0.006                         0.006
+            u_walker     0.005                         0.005
+MACs per GEMM            1,658,880                     7,962,624
+Energy per GEMM          91.2 uJ                       301.6 uJ
+Energy per MAC           55.0 pJ                       37.9 pJ (35.8 pJ dynamic only)
+Throughput               30.6 GMAC/s (with gaps)       63.5 GMAC/s (99.2% of peak; measured on the AC701)
+Efficiency               18.2 GMAC/s/W                 26.4 GMAC/s/W
+
+Files: gemm_l0_q.saif / power_saif.rpt / power_saif_hier.rpt (5 rows); gemm_l0_q_r24.saif / power_saif_r24.rpt /
+power_saif_r24_hier.rpt (24 rows). Estimates, not board measurements.

@@ -1,0 +1,68 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Oct 30 00:23:59 2026
+| Host         : DESKTOP-OGB41JU running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 3 -file D:/ac701_vivado_v2/ac701_me_board/reports/routed_utilization_hier.rpt
+| Design       : ac701_me_board
+| Device       : xc7a200tfbg676-2
+| Speed File   : -2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|          Instance          |                     Module                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------+------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| ac701_me_board             |                                          (top) |      16175 |      13418 |    1518 | 1239 | 58450 |    283 |     12 |        518 |
+|   (ac701_me_board)         |                                          (top) |         56 |         56 |       0 |    0 |   105 |      0 |      0 |          0 |
+|   dbg_hub                  |                                        dbg_hub |        479 |        455 |      24 |    0 |   753 |      0 |      0 |          0 |
+|     (dbg_hub)              |                                        dbg_hub |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|     inst                   |                     dbg_hub_xsdbm_v3_0_2_xsdbm |        479 |        455 |      24 |    0 |   753 |      0 |      0 |          0 |
+|       BSCANID.u_xsdbm_id   |                  dbg_hub_xsdbm_v3_0_2_xsdbm_id |        479 |        455 |      24 |    0 |   753 |      0 |      0 |          0 |
+|   u_ila                    |                                         bd_ila |        832 |        648 |       0 |  184 |  1670 |      4 |      0 |          0 |
+|     (u_ila)                |                                         bd_ila |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|     inst                   |                         bd_ila_ila_v6_2_15_ila |        832 |        648 |       0 |  184 |  1670 |      4 |      0 |          0 |
+|       (inst)               |                         bd_ila_ila_v6_2_15_ila |          1 |          1 |       0 |    0 |   134 |      0 |      0 |          0 |
+|       ila_core_inst        |                    bd_ila_ila_v6_2_15_ila_core |        831 |        647 |       0 |  184 |  1536 |      4 |      0 |          0 |
+|   u_shell                  |                                       bd_shell |      14390 |      11841 |    1494 | 1055 | 52672 |    279 |     12 |        518 |
+|     (u_shell)              |                                       bd_shell |          0 |          0 |       0 |    0 |     0 |      7 |      1 |          0 |
+|     u_ctrl                 |                                        bd_ctrl |        643 |        643 |       0 |    0 |   789 |      0 |      0 |          0 |
+|     u_me                   |                                         me_top |       8335 |       6814 |     466 | 1055 | 47820 |     80 |      1 |        518 |
+|       u_array              |                                       me_array |       2625 |       1681 |       0 |  944 | 41691 |      0 |      0 |        512 |
+|       u_cmd                |                                      me_s1_cmd |        335 |        335 |       0 |    0 |   638 |      0 |      0 |          0 |
+|       u_drain              |                                       me_drain |       3189 |       2706 |     378 |  105 |  2408 |      0 |      0 |          6 |
+|       u_ring               |                                 me_weight_ring |        587 |        531 |      56 |    0 |   606 |     28 |      1 |          0 |
+|       u_store              |                                   me_row_store |       1437 |       1427 |      10 |    0 |  2287 |     52 |      0 |          0 |
+|       u_walker             |                                 me_tile_walker |        164 |        136 |      22 |    6 |   190 |      0 |      0 |          0 |
+|     u_mem                  |                                    bd_mem_side |       5453 |       4425 |    1028 |    0 |  4063 |    192 |     10 |          0 |
+|       (u_mem)              |                                    bd_mem_side |         30 |         30 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       u_chk                |                                     bd_checker |        860 |        860 |       0 |    0 |  2306 |      0 |      0 |          0 |
+|       u_ref                |                    bd_streamer__parameterized1 |        395 |         51 |     344 |    0 |    41 |      0 |      0 |          0 |
+|       u_ref_rom            |                         bd_rom__parameterized1 |         29 |         29 |       0 |    0 |     3 |     24 |      0 |          0 |
+|       u_win                |                                    bd_streamer |        392 |         50 |     342 |    0 |    40 |      0 |      0 |          0 |
+|       u_win_rom            |                                         bd_rom |         24 |         24 |       0 |    0 |     2 |     14 |      0 |          0 |
+|       u_wt                 |                    bd_streamer__parameterized0 |       1790 |       1448 |     342 |    0 |  1057 |      0 |      0 |          0 |
+|       u_wt_rom             |                         bd_rom__parameterized0 |       1934 |       1934 |       0 |    0 |   548 |    154 |     10 |          0 |
+|   u_vio                    |                                         bd_vio |        419 |        419 |       0 |    0 |  3250 |      0 |      0 |          0 |
+|     (u_vio)                |                                         bd_vio |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|     inst                   |                         bd_vio_vio_v3_0_25_vio |        419 |        419 |       0 |    0 |  3250 |      0 |      0 |          0 |
+|       (inst)               |                         bd_vio_vio_v3_0_25_vio |          0 |          0 |       0 |    0 |    16 |      0 |      0 |          0 |
+|       DECODER_INST         |                     bd_vio_vio_v3_0_25_decoder |         34 |         34 |       0 |    0 |    48 |      0 |      0 |          0 |
+|       PROBE_IN_INST        |                bd_vio_vio_v3_0_25_probe_in_one |        280 |        280 |       0 |    0 |  2958 |      0 |      0 |          0 |
+|       PROBE_IN_WIDTH_INST  |                 bd_vio_vio_v3_0_25_probe_width |          6 |          6 |       0 |    0 |     8 |      0 |      0 |          0 |
+|       PROBE_OUT_ALL_INST   |               bd_vio_vio_v3_0_25_probe_out_all |         20 |         20 |       0 |    0 |    55 |      0 |      0 |          0 |
+|       PROBE_OUT_WIDTH_INST | bd_vio_vio_v3_0_25_probe_width__parameterized0 |          2 |          2 |       0 |    0 |     4 |      0 |      0 |          0 |
+|       U_XSDB_SLAVE         |                      bd_vio_xsdbs_v1_0_4_xsdbs |         77 |         77 |       0 |    0 |   161 |      0 |      0 |          0 |
++----------------------------+------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
